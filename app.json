@@ -19,12 +19,7 @@
     "TG_BOT_TOKEN": {
       "description": "Your bot token, as a string.",
       "value": ""
-    },
-    "UPDATE_CHANNEL": {
-      "description": "For Force Subscribe. Paste your Update channel USERNAME (without @)..",
-      "value": "",
-      "required": false
-    },
+    }, 
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
       "value": ""
