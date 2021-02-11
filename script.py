@@ -2,7 +2,7 @@ class script(object):
     START_TEXT = """ A Simple And Fastest File Renamer Bot With Permanent Thumbnail support!💯
 
 <b>Send me any Telegram file and choose appropriate option! </b>
-For Know More Hit /help.
+For Know More Hit /help."""
 @pyrogram.Client.on_message(pyrogram.Filters.command(["help"]))
 async def help_user(bot, update):
 
@@ -19,7 +19,7 @@ async def help_user(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
-    )"""
+    )
 
     RENAME_403_ERR = "What Are You Doing? You are Banned"
     UPGRADE_TEXT = "CONTACT @Ek_comme_nt_bot"
