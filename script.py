@@ -1,5 +1,9 @@
 class script(object):
-@pyrogram.Client.on_message(pyrogram.Filters.command(["help"]))
+    START_TEXT = """ A Simple And Fastest File Renamer Bot With Permanent Thumbnail support!💯
+
+<b>Send me any Telegram file and choose appropriate option! </b>
+For Know More Hit /help."""
+"""@pyrogram.Client.on_message(pyrogram.Filters.command(["help"]))
 async def help_user(bot, update):
 
 #   TRChatBase(update.from_user.id, update.text, "/help")
@@ -15,11 +19,7 @@ async def help_user(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
-    )
-    START_TEXT = """ A Simple And Fastest File Renamer Bot With Permanent Thumbnail support!💯
-
-<b>Send me any Telegram file and choose appropriate option! </b>
-For Know More Hit /help."""
+    )"""
 
 
     RENAME_403_ERR = "What Are You Doing? You are Banned"
@@ -27,7 +27,7 @@ For Know More Hit /help."""
     DOWNLOAD_START = "Give Me Some Time 🙏..."
     UPLOAD_START = "Starting to upload 😝..."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "**Thank you for Using Me. @ekbotz_update.**"
-    SAVED_THUMB = "Thumbnail Saved as permanent ✅ This Is Permanent"
+    SAVED_THUMB = "Thumbnail Saved as permanent ✅. This Is Permanent"
     DEL_THUMB = "Thumbnail cleared succesfully!"
     NO_THUMB = "No thumbnails found!😐"
     SAVED_RECVD_DOC_FILE = "File Downloaded Successfully 😎"
