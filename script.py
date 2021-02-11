@@ -2,8 +2,8 @@ class script(object):
     START_TEXT = """ A Simple And Fastest File Renamer Bot With Permanent Thumbnail support!💯
 
 <b>Send me any Telegram file and choose appropriate option! </b>
-For Know More Hit /help."""
-"""@pyrogram.Client.on_message(pyrogram.Filters.command(["help"]))
+For Know More Hit /help.
+@pyrogram.Client.on_message(pyrogram.Filters.command(["help"]))
 async def help_user(bot, update):
 
 #   TRChatBase(update.from_user.id, update.text, "/help")
