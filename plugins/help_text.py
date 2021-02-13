@@ -31,6 +31,7 @@ def help_user(bot, update):
         chat_id=update.chat.id,
         text=script.HELP_USER,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔰 Channel 🔰", url="https://t.me/ekbotz_update")]]),
+        ([[InlineKeyboardButton(text="♐️ Share ♐️", url="https://t.me/share/url?url=t.me/Rename_EK_Bot")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -44,6 +45,7 @@ def send_start(bot, update):
     bot.send_message(
         chat_id=update.chat.id,
         text=script.START_TEXT.format(update.from_user.first_name),
+        reply_markup=Inlinekeyboardmarkup([[InlineKeyboardButton(text="🔱 Channel 🔱", url="https://t.me/ekbotz_update")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
