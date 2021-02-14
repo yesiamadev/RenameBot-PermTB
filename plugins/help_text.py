@@ -31,7 +31,8 @@ def help_user(bot, update):
         chat_id=update.chat.id,
         text=script.HELP_USER,
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔰 Channel 🔰", url="https://t.me/ekbotz_update")],
-                         [InlineKeyboardButton(text="♐️ Share ♐️", url="https://t.me/share/url?url=t.me/Rename_EK_Bot")]]),
+                          [InlineKeyboardButton(text="♐️ Share ♐️", url="https://t.me/share/url?url=t.me/Rename_EK_Bot")],
+                                                       [InlineKeyboardButton(text="🏘 Home 🏘", callback_data="start")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
